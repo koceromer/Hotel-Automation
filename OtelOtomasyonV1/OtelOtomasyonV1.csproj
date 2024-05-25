@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5DFB216-0806-45FE-A7A8-5D4B02815A06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OtelOtomasyonV1</RootNamespace>
+    <AssemblyName>OtelOtomasyonV1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="veriT, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\veriT\veriT\bin\Debug\veriT.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProgramAyar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>ProgramAyar.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisCikisKyt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisCikisKyt.Designer.cs">
+      <DependentUpon>GirisCikisKyt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifremiUnuttum.Designer.cs">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YardımSimge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YardımSimge.Designer.cs">
+      <DependentUpon>YardımSimge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaDüzen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaDüzen.Designer.cs">
+      <DependentUpon>OdaDüzen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="programAyarlari.cs" />
+    <Compile Include="AdminKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminKayit.Designer.cs">
+      <DependentUpon>AdminKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelNoSimge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelNoSimge.Designer.cs">
+      <DependentUpon>TelNoSimge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayitSimge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitSimge.Designer.cs">
+      <DependentUpon>KayitSimge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriSimge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriSimge.Designer.cs">
+      <DependentUpon>MusteriSimge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaSimge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaSimge.Designer.cs">
+      <DependentUpon>OdaSimge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGiris.Designer.cs">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaMenü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenü.Designer.cs">
+      <DependentUpon>AnaMenü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RezervasyonSimge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RezervasyonSimge.Designer.cs">
+      <DependentUpon>RezervasyonSimge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniMusteriKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniMusteriKayit.Designer.cs">
+      <DependentUpon>YeniMusteriKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriGörüntüle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriGörüntüle.Designer.cs">
+      <DependentUpon>MusteriGörüntüle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaBilgiSimge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaBilgiSimge.Designer.cs">
+      <DependentUpon>OdaBilgiSimge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaKontrol.Designer.cs">
+      <DependentUpon>OdaKontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminProfil.Designer.cs">
+      <DependentUpon>AdminProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="YapımcıBilgiYan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YapımcıBilgiYan.Designer.cs">
+      <DependentUpon>YapımcıBilgiYan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RezervasyonOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RezervasyonOlustur.Designer.cs">
+      <DependentUpon>RezervasyonOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YapımcıBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YapımcıBilgi.Designer.cs">
+      <DependentUpon>YapımcıBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelNoResepsiyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelNoResepsiyon.Designer.cs">
+      <DependentUpon>TelNoResepsiyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminYetkiDüzen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminYetkiDüzen.Designer.cs">
+      <DependentUpon>AdminYetkiDüzen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ProgramAyar.resx">
+      <DependentUpon>ProgramAyar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisCikisKyt.resx">
+      <DependentUpon>GirisCikisKyt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifremiUnuttum.resx">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YardımSimge.resx">
+      <DependentUpon>YardımSimge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminKayit.resx">
+      <DependentUpon>AdminKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelNoSimge.resx">
+      <DependentUpon>TelNoSimge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitSimge.resx">
+      <DependentUpon>KayitSimge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriSimge.resx">
+      <DependentUpon>MusteriSimge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaSimge.resx">
+      <DependentUpon>OdaSimge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGiris.resx">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaMenü.resx">
+      <DependentUpon>AnaMenü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RezervasyonSimge.resx">
+      <DependentUpon>RezervasyonSimge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniMusteriKayit.resx">
+      <DependentUpon>YeniMusteriKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriGörüntüle.resx">
+      <DependentUpon>MusteriGörüntüle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaDüzen.resx">
+      <DependentUpon>OdaDüzen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaBilgiSimge.resx">
+      <DependentUpon>OdaBilgiSimge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaKontrol.resx">
+      <DependentUpon>OdaKontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminProfil.resx">
+      <DependentUpon>AdminProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YapımcıBilgiYan.resx">
+      <DependentUpon>YapımcıBilgiYan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RezervasyonOlustur.resx">
+      <DependentUpon>RezervasyonOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YapımcıBilgi.resx">
+      <DependentUpon>YapımcıBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelNoResepsiyon.resx">
+      <DependentUpon>TelNoResepsiyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminYetkiDüzen.resx">
+      <DependentUpon>AdminYetkiDüzen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20220115_BULANIK1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mavi%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feeling-PhotoRoom.png-PhotoRoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OdalarForm1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RezervasyonlarForm1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelefonNumaralarıForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YardımForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResimYükleme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YatakResmiOdalarFormu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
